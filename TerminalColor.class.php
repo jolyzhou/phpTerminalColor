@@ -76,6 +76,10 @@ class TerminalColor {
         $this->colorType = $_colorType;
     }
 
+    public function setColorType($type) {
+        $this->colorType = $type;
+    }
+
     public function setGrayColor($text) {
         $color = $this->colorType.'_GRARY';
         return $this->$color.$text.self::RESET;
